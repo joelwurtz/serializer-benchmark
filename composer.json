@@ -1,0 +1,22 @@
+{
+    "name": "jwurtz/serializer-benchmark",
+    "description": "Benchmarking serializer solutions",
+    "require": {
+        "jms/serializer": "dev-master",
+        "symfony/serializer": "dev-master",
+        "zendframework/zend-serializer": "dev-master",
+        "jane/jane": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Benchmark\\": "generated/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joel Wurtz",
+            "email": "jwurtz@jolicode.com"
+        }
+    ]
+}

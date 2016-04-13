@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "Dummy": {
+      "type": "object",
+      "properties": {
+        "propA": {"type": "string"},
+        "propB": {"type": "integer"},
+        "propC": {"type": "number"},
+        "propD": {"type": "array", "items": {"type": "string"}},
+        "propE": {"$ref": "#/definitions/Foo"},
+        "propF": {"type": "array", "items": {"$ref": "#/definitions/Foo"}}
+      }
+    },
+    "Foo": {
+      "type": "object",
+      "properties": {
+        "propA": {"type": "string"},
+        "propB": {"type": "integer"},
+        "propC": {"type": "number"}
+      }
+    }
+  }
+}
